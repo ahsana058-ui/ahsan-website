@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type Crafts by Ahsan | Fast Typing & AI Note Enhancements</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#ecfdf5',
+                            100: '#d1fae5',
+                            500: '#10b981',
+                            600: '#059669',
+                            700: '#047857',
+                            800: '#065f46',
+                            900: '#064e3b',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col">
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200/80 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-700 to-emerald-400 flex items-center justify-center text-white font-bold text-lg shadow-md group-hover:scale-105 transition-transform">
+                    <i class="fa-solid fa-keyboard"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-extrabold text-lg text-slate-900 leading-tight">Type Crafts</span>
+                    <span class="text-xs text-brand-600 font-semibold tracking-wide uppercase">By Ahsan</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 font-medium text-slate-600 text-sm">
+                <a href="#services" class="hover:text-brand-600 transition-colors">Services</a>
+                <a href="#pricing" class="hover:text-brand-600 transition-colors">Pricing</a>
+                <a href="#calculator" class="hover:text-brand-600 transition-colors">Calculator</a>
+                <a href="#payment" class="hover:text-brand-600 transition-colors">EasyPaisa</a>
+            </nav>
+
+            <a href="https://wa.me/923161507237?text=Hi%20Ahsan!%20I%20have%20notes%20that%20I%20want%20you%20to%20type." 
+               target="_blank" 
+               class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-sm px-4 py-2 rounded-xl shadow-md transition-all">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span>Chat on WhatsApp</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section class="relative overflow-hidden pt-12 pb-16 lg:pt-20 lg:pb-24 bg-gradient-to-b from-brand-50/60 via-white to-slate-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-100 text-emerald-800 text-xs sm:text-sm font-semibold mb-6">
+                    <i class="fa-solid fa-bolt text-brand-600"></i>
+                    <span>Affordable, Fast & AI-Enhanced Typing</span>
+                </div>
+
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight max-w-4xl mx-auto mb-6">
+                    Turn Messy Notes into <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-700 to-emerald-500">Perfect Word Documents</span>
+                </h1>
+
+                <p class="text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto mb-8 leading-relaxed">
+                    Send photos of your handwritten papers, PDFs, or raw drafts. I type them cleanly into MS Word and format them with AI for maximum readability.
+                </p>
+
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="https://wa.me/923161507237?text=Hi%20Ahsan,%20I%20would%20like%20to%20order%20typing%20services." 
+                       target="_blank" 
+                       class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-slate-900 hover:bg-slate-800 text-white font-bold px-7 py-3.5 rounded-xl shadow-lg hover:-translate-y-0.5 transition-all">
+                        <i class="fa-brands fa-whatsapp text-emerald-400 text-xl"></i>
+                        <span>Order Now on WhatsApp</span>
+                    </a>
+
+                    <a href="#calculator" 
+                       class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 font-semibold px-6 py-3.5 rounded-xl shadow-sm transition-all">
+                        <i class="fa-solid fa-calculator text-brand-600"></i>
+                        <span>Calculate Cost</span>
+                    </a>
+                </div>
+
+                <!-- Trust Highlights -->
+                <div class="mt-14 pt-8 border-t border-slate-200/80 grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div class="p-4 bg-white/70 rounded-xl border border-slate-100 shadow-sm">
+                        <div class="text-2xl font-extrabold text-slate-900">30 PKR</div>
+                        <div class="text-xs text-slate-500 font-medium mt-1">Starting Price / Page</div>
+                    </div>
+                    <div class="p-4 bg-white/70 rounded-xl border border-slate-100 shadow-sm">
+                        <div class="text-2xl font-extrabold text-slate-900">From 10 PKR</div>
+                        <div class="text-xs text-slate-500 font-medium mt-1">Low Advance Payment</div>
+                    </div>
+                    <div class="p-4 bg-white/70 rounded-xl border border-slate-100 shadow-sm">
+                        <div class="text-2xl font-extrabold text-slate-900">AI Polish</div>
+                        <div class="text-xs text-slate-500 font-medium mt-1">Grammar & Formatting</div>
+                    </div>
+                    <div class="p-4 bg-white/70 rounded-xl border border-slate-100 shadow-sm">
+                        <div class="text-2xl font-extrabold text-slate-900">EasyPaisa</div>
+                        <div class="text-xs text-slate-500 font-medium mt-1">Fast Local Payment</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Tiers Section -->
+        <section id="pricing" class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-12">
+                    <span class="text-xs font-bold text-brand-600 tracking-wider uppercase">Simple & Clear Rates</span>
+                    <h2 class="text-3xl font-extrabold text-slate-900 sm:text-4xl mt-1">Pricing Tiers</h2>
+                    <p class="text-slate-600 mt-2">Transparent pricing with small advance payments to get started.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Tier 1: Basic Typing -->
+                    <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between hover:border-brand-500 transition-all hover:shadow-md">
+                        <div>
+                            <span class="inline-block px-3 py-1 bg-slate-200 text-slate-700 font-bold text-xs rounded-lg mb-4">Standard</span>
+                            <h3 class="text-2xl font-bold text-slate-900 mb-2">Basic Typing</h3>
+                            <p class="text-slate-500 text-sm mb-6">Clean manual typing from handwritten notes into MS Word format.</p>
+                            
+                            <div class="bg-white p-4 rounded-xl border border-slate-200/80 mb-6">
+                                <div class="flex items-baseline gap-1">
+                                    <span class="text-3xl font-extrabold text-slate-900">30 PKR</span>
+                                    <span class="text-slate-500 text-sm font-medium">/ page</span>
+                                </div>
+                                <div class="text-xs font-bold text-brand-700 mt-1">
+                                    <i class="fa-solid fa-lock text-brand-600 mr-1"></i>Advance: 10 PKR / page
+                                </div>
+                            </div>
+
+                            <ul class="space-y-3 text-sm text-slate-600 mb-8">
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> Accurate handwritten typing</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> Standard MS Word document (.docx)</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> Clean font & layout</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> Delivered in 48 hours</li>
+                            </ul>
+                        </div>
+                        <a href="https://wa.me/923161507237?text=Hi%20Ahsan,%20I%20want%20to%20order%20Basic%20Typing%20(30%20PKR/page)." 
+                           target="_blank" 
+                           class="w-full text-center py-3 px-4 bg-slate-900 hover:bg-slate-800 text-white font-semibold rounded-xl transition-colors">
+                            Select Basic Plan
+                        </a>
+                    </div>
+
+                    <!-- Tier 2: AI-Enhanced (Popular) -->
+                    <div class="bg-gradient-to-b from-emerald-50/70 to-white border-2 border-brand-500 rounded-2xl p-6 sm:p-8 flex flex-col justify-between shadow-xl relative">
+                        <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-brand-600 text-white font-bold text-xs uppercase px-4 py-1 rounded-full shadow-md">Most Popular</div>
+                        <div>
+                            <span class="inline-block px-3 py-1 bg-brand-100 text-brand-800 font-bold text-xs rounded-lg mb-4">Recommended</span>
+                            <h3 class="text-2xl font-bold text-slate-900 mb-2">AI-Enhanced</h3>
+                            <p class="text-slate-500 text-sm mb-6">Typing enhanced with AI grammar corrections, bold headings, and clear formatting.</p>
+
+                            <div class="bg-white p-4 rounded-xl border border-brand-200 mb-6">
+                                <div class="flex items-baseline gap-1">
+                                    <span class="text-3xl font-extrabold text-slate-900">50 PKR</span>
+                                    <span class="text-slate-500 text-sm font-medium">/ page</span>
+                                </div>
+                                <div class="text-xs font-bold text-brand-700 mt-1">
+                                    <i class="fa-solid fa-lock text-brand-600 mr-1"></i>Advance: 30 PKR / page
+                                </div>
+                            </div>
+
+                            <ul class="space-y-3 text-sm text-slate-600 mb-8">
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> Everything in Basic</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> AI grammar & spelling polish</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> Professional headings & bullet points</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> MS Word + PDF file export</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> Delivered in 24-36 hours</li>
+                            </ul>
+                        </div>
+                        <a href="https://wa.me/923161507237?text=Hi%20Ahsan,%20I%20want%20to%20order%20AI-Enhanced%20Typing%20(50%20PKR/page)." 
+                           target="_blank" 
+                           class="w-full text-center py-3 px-4 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold rounded-xl transition-colors shadow">
+                            Select AI-Enhanced Plan
+                        </a>
+                    </div>
+
+                    <!-- Tier 3: Express Delivery -->
+                    <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 sm:p-8 flex flex-col justify-between hover:border-brand-500 transition-all hover:shadow-md">
+                        <div>
+                            <span class="inline-block px-3 py-1 bg-amber-100 text-amber-800 font-bold text-xs rounded-lg mb-4">Fastest</span>
+                            <h3 class="text-2xl font-bold text-slate-900 mb-2">Express Delivery</h3>
+                            <p class="text-slate-500 text-sm mb-6">Urgent processing for tight school or college deadlines with full formatting.</p>
+
+                            <div class="bg-white p-4 rounded-xl border border-slate-200/80 mb-6">
+                                <div class="flex items-baseline gap-1">
+                                    <span class="text-3xl font-extrabold text-slate-900">70 PKR</span>
+                                    <span class="text-slate-500 text-sm font-medium">/ page</span>
+                                </div>
+                                <div class="text-xs font-bold text-brand-700 mt-1">
+                                    <i class="fa-solid fa-lock text-brand-600 mr-1"></i>Advance: 40 PKR / page
+                                </div>
+                            </div>
+
+                            <ul class="space-y-3 text-sm text-slate-600 mb-8">
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> Priority fast queue</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> Urgent 12 to 24-hour delivery</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> Full AI grammar & heading polish</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-600"></i> Word + PDF format included</li>
+                            </ul>
+                        </div>
+                        <a href="https://wa.me/923161507237?text=Hi%20Ahsan,%20I%20need%20Express%20Delivery%20(70%20PKR/page)." 
+                           target="_blank" 
+                           class="w-full text-center py-3 px-4 bg-slate-900 hover:bg-slate-800 text-white font-semibold rounded-xl transition-colors">
+                            Select Express Plan
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Live Price & Advance Calculator -->
+        <section id="calculator" class="py-16 bg-slate-900 text-white relative">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-10">
+                    <span class="text-xs font-bold text-emerald-400 tracking-wider uppercase">Live Estimator</span>
+                    <h2 class="text-3xl font-extrabold mt-1">Order Cost & Advance Calculator</h2>
+                    <p class="text-slate-400 text-sm mt-1">Enter your total pages to calculate exact payment details.</p>
+                </div>
+
+                <div class="bg-slate-800 border border-slate-700 rounded-2xl p-6 sm:p-8 shadow-2xl">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                        <!-- Number of Pages Input -->
+                        <div>
+                            <label class="block text-sm font-medium mb-2 text-slate-300">Total Number of Pages</label>
+                            <input type="number" id="pageCount" min="1" value="5" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-emerald-500 font-semibold text-lg">
+                        </div>
+
+                        <!-- Select Plan Tier -->
+                        <div>
+                            <label class="block text-sm font-medium mb-2 text-slate-300">Choose Service Tier</label>
+                            <select id="planSelect" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-emerald-500 font-medium">
+                                <option value="30" data-advance="10">Basic Typing (30 PKR total / 10 PKR advance)</option>
+                                <option value="50" data-advance="30" selected>AI-Enhanced (50 PKR total / 30 PKR advance)</option>
+                                <option value="70" data-advance="40">Fastest Express (70 PKR total / 40 PKR advance)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Calculated Output Display Cards -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 bg-slate-900/80 p-5 rounded-xl border border-slate-700 mb-8">
+                        <div>
+                            <span class="text-xs text-slate-400 font-medium uppercase tracking-wider block mb-1">Total Order Cost:</span>
+                            <span id="totalCostDisplay" class="text-3xl font-extrabold text-white">250 PKR</span>
+                        </div>
+                        <div class="border-t sm:border-t-0 sm:border-l border-slate-800 pt-3 sm:pt-0 sm:pl-4">
+                            <span class="text-xs text-emerald-400 font-medium uppercase tracking-wider block mb-1">Required Advance Payment:</span>
+                            <span id="advanceCostDisplay" class="text-3xl font-extrabold text-emerald-400">150 PKR</span>
+                        </div>
+                    </div>
+
+                    <!-- Submit WhatsApp Button -->
+                    <button onclick="sendWhatsAppOrder()" class="w-full bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold py-4 rounded-xl transition-all flex items-center justify-center gap-3 text-base shadow-lg">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                        <span>Send Order & Details on WhatsApp</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Payment Instructions (EasyPaisa) -->
+        <section id="payment" class="py-16 bg-slate-50">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-10">
+                    <span class="text-xs font-bold text-brand-600 tracking-wider uppercase">Easy Payment</span>
+                    <h2 class="text-3xl font-extrabold text-slate-900 mt-1">Payment Method</h2>
+                    <p class="text-slate-600 text-sm mt-1">Pay your advance payment quickly via EasyPaisa.</p>
+                </div>
+
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-md">
+                    <div class="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-100">
+                        <div class="flex items-center gap-4">
+                            <div class="w-14 h-14 bg-emerald-600 rounded-2xl flex items-center justify-center text-white text-2xl font-bold shadow shrink-0">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-extrabold text-slate-900">EasyPaisa Account</h3>
+                                <p class="text-sm text-slate-500">Account Title: <strong class="text-slate-800">Ahsan</strong></p>
+                                <p class="text-base font-bold text-emerald-700 tracking-wide mt-0.5">0316-1507237</p>
+                            </div>
+                        </div>
+
+                        <button onclick="copyEasyPaisaNumber()" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold px-5 py-3 rounded-xl transition-colors text-sm">
+                            <i class="fa-regular fa-copy"></i>
+                            <span id="copyBtnText">Copy Number</span>
+                        </button>
+                    </div>
+
+                    <!-- 3 Step Guide -->
+                    <div class="pt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="w-10 h-10 rounded-full bg-brand-100 text-brand-800 font-extrabold flex items-center justify-center mb-3">1</div>
+                            <h4 class="font-bold text-slate-900 text-sm mb-1">Calculate Advance</h4>
+                            <p class="text-xs text-slate-500">Use the calculator above to find the exact advance amount.</p>
+                        </div>
+                        <div class="flex flex-col items-center text-center">
+                            <div class="w-10 h-10 rounded-full bg-brand-100 text-brand-800 font-extrabold flex items-center justify-center mb-3">2</div>
+                            <h4 class="font-bold text-slate-900 text-sm mb-1">Send Payment</h4>
+                            <p class="text-xs text-slate-500">Transfer the advance to EasyPaisa number 0316-1507237.</p>
+                        </div>
+                        <div class="flex flex-col items-center text-center">
+                            <div class="w-10 h-10 rounded-full bg-brand-100 text-brand-800 font-extrabold flex items-center justify-center mb-3">3</div>
+                            <h4 class="font-bold text-slate-900 text-sm mb-1">Send Receipt & Notes</h4>
+                            <p class="text-xs text-slate-500">Share your payment screenshot and note photos on WhatsApp.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 border-t border-slate-800 py-12 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 mb-8">
+                <div class="flex items-center gap-3">
+                    <div class="w-9 h-9 rounded-xl bg-emerald-500 flex items-center justify-center text-slate-950 font-bold">
+                        <i class="fa-solid fa-keyboard"></i>
+                    </div>
+                    <div>
+                        <span class="font-bold text-white text-base block">Type Crafts by Ahsan</span>
+                        <span class="text-xs text-slate-500">Professional Note Typing & AI Formatting</span>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row items-center gap-6 text-sm">
+                    <a href="https://wa.me/923161507237" target="_blank" class="flex items-center gap-2 hover:text-emerald-400 transition-colors">
+                        <i class="fa-brands fa-whatsapp text-emerald-400"></i>
+                        <span>0316-1507237</span>
+                    </a>
+                    <a href="mailto:ahsana058@gmail.com" class="flex items-center gap-2 hover:text-emerald-400 transition-colors">
+                        <i class="fa-regular fa-envelope text-emerald-400"></i>
+                        <span>ahsana058@gmail.com</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="border-t border-slate-800 pt-6 text-center text-xs text-slate-500">
+                © 2026 Type Crafts by Ahsan. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Logic -->
+    <script>
+        // DOM Elements
+        const pageInput = document.getElementById('pageCount');
+        const planSelect = document.getElementById('planSelect');
+        const totalDisplay = document.getElementById('totalCostDisplay');
+        const advanceDisplay = document.getElementById('advanceCostDisplay');
+
+        // Calculator Logic
+        function updateCalculation() {
+            const pages = Math.max(1, parseInt(pageInput.value) || 1);
+            const selectedOption = planSelect.options[planSelect.selectedIndex];
+            
+            const rate = parseInt(planSelect.value);
+            const advanceRate = parseInt(selectedOption.getAttribute('data-advance'));
+
+            const total = pages * rate;
+            const advance = pages * advanceRate;
+
+            totalDisplay.innerText = `${total} PKR`;
+            advanceDisplay.innerText = `${advance} PKR`;
+        }
+
+        pageInput.addEventListener('input', updateCalculation);
+        planSelect.addEventListener('change', updateCalculation);
+
+        // WhatsApp Order Pre-fill Link
+        function sendWhatsAppOrder() {
+            const pages = Math.max(1, parseInt(pageInput.value) || 1);
+            const selectedOption = planSelect.options[planSelect.selectedIndex];
+            const planTitle = selectedOption.text.split('(')[0].trim();
+            
+            const total = totalDisplay.innerText;
+            const advance = advanceDisplay.innerText;
+
+            const message = `Hi Ahsan!\n\nI would like to order typing services:\n- Service: ${planTitle}\n- Pages: ${pages}\n- Total Price: ${total}\n- Advance Payment: ${advance}\n\nI am attaching my notes photos/PDF now. Please verify!`;
+            
+            const encodedMessage = encodeURIComponent(message);
+            window.open(`https://wa.me/923161507237?text=${encodedMessage}`, '_blank');
+        }
+
+        // Copy EasyPaisa Number function
+        function copyEasyPaisaNumber() {
+            const number = "03161507237";
+            const btnText = document.getElementById('copyBtnText');
+            
+            // Clipboard fallback mechanism
+            const tempInput = document.createElement('input');
+            tempInput.value = number;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+
+            btnText.innerText = "Copied!";
+            setTimeout(() => {
+                btnText.innerText = "Copy Number";
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
